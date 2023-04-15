@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="833,400" id="bank" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D313030302070726F6A65637442616E6B5F30312F4865686C546F">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.1/@sourceConnections.0" name="Konto" location="255,60" size="124,193" id="bank/Konto" runTimeClassModel="getKontonummer(),setKontostand(D),kontostand,auszahlen(),getKontostand(),kontonummer,einzahlen(),setKontonummer(I),Konto(ID)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,32">
+      <children xsi:type="editmodel:AttributeEditModel" name="kontonummer" id="bank/Konto#kontonummer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kontostand" id="bank/Konto#kontostand"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,112">
+      <children xsi:type="editmodel:MethodEditModel" name="auszahlen" id="bank/Konto#auszahlen(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="einzahlen" id="bank/Konto#einzahlen()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKontonummer" id="bank/Konto#getKontonummer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKontostand" id="bank/Konto#getKontostand()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setKontonummer" id="bank/Konto#setKontonummer(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setKontostand" id="bank/Konto#setKontostand(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Konto" id="bank/Konto#Konto(ID)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Girokonto" location="405,225" size="151,129" id="bank/Girokonto" runTimeClassModel="giroGebuehr,Girokonto(IDD),berechneGiroGebuehr(D),setGiroGebuehr(D),getGiroGebuehr()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,16">
+      <children xsi:type="editmodel:AttributeEditModel" name="giroGebuehr" id="bank/Girokonto#giroGebuehr"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="128,64">
+      <children xsi:type="editmodel:MethodEditModel" name="berechneGiroGebuehr" id="bank/Girokonto#berechneGiroGebuehr(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getGiroGebuehr" id="bank/Girokonto#getGiroGebuehr()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setGiroGebuehr" id="bank/Girokonto#setGiroGebuehr(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Girokonto" id="bank/Girokonto#Girokonto(IDD)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="bank/Konto&lt;-bank/Girokonto" source="//@children.1" target="//@children.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,13" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="124,178"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Sparkonto" location="66,225" size="132,129" id="bank/Sparkonto" runTimeClassModel="sparZinssatz,getSparZinssatz(),verzinsen(),Sparkonto(IDD),setSparZinssatz(D)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,16">
+      <children xsi:type="editmodel:AttributeEditModel" name="sparZinssatz" id="bank/Sparkonto#sparZinssatz"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,64">
+      <children xsi:type="editmodel:MethodEditModel" name="getSparZinssatz" id="bank/Sparkonto#getSparZinssatz()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSparZinssatz" id="bank/Sparkonto#setSparZinssatz(D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="verzinsen" id="bank/Sparkonto#verzinsen()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Sparkonto" id="bank/Sparkonto#Sparkonto(IDD)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="bank/Konto&lt;-bank/Sparkonto" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="132,13" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,178"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

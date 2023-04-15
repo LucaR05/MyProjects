@@ -1,0 +1,18 @@
+/* Datei: format.css */
+h1,h2	{
+		color:	blue;	
+}
+body {
+		background-color: olive;
+		font-family: Segoe Print;
+		background-image: url("R.jpg");
+}		
+p  {
+		text-align: center;
+}
+h1 {
+	background-color: silver;
+}
+table,th,td{
+		border: 1px solid black;
+}		
